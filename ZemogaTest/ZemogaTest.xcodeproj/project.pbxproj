@@ -13,7 +13,26 @@
 		2D126BE628AD6888008DB6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D126BE428AD6888008DB6CD /* Main.storyboard */; };
 		2D126BE828AD688A008DB6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D126BE728AD688A008DB6CD /* Assets.xcassets */; };
 		2D126BEB28AD688A008DB6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D126BE928AD688A008DB6CD /* LaunchScreen.storyboard */; };
+		2D2F268328AD6B5200DEA832 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F268128AD6B5200DEA832 /* Domain.framework */; };
+		2D2F268428AD6B5200DEA832 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F268128AD6B5200DEA832 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D2F268528AD6B5200DEA832 /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F268228AD6B5200DEA832 /* Infrastructure.framework */; };
+		2D2F268628AD6B5200DEA832 /* Infrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F268228AD6B5200DEA832 /* Infrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D2F268728AD6B5200DEA832 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D2F268428AD6B5200DEA832 /* Domain.framework in Embed Frameworks */,
+				2D2F268628AD6B5200DEA832 /* Infrastructure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D126BDB28AD6888008DB6CD /* ZemogaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +43,8 @@
 		2D126BE728AD688A008DB6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D126BEA28AD688A008DB6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D126BEC28AD688A008DB6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2F268128AD6B5200DEA832 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2F268228AD6B5200DEA832 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2F268328AD6B5200DEA832 /* Domain.framework in Frameworks */,
+				2D2F268528AD6B5200DEA832 /* Infrastructure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 			children = (
 				2D126BDD28AD6888008DB6CD /* ZemogaTest */,
 				2D126BDC28AD6888008DB6CD /* Products */,
+				2D2F268028AD6B5200DEA832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +91,15 @@
 			path = ZemogaTest;
 			sourceTree = "<group>";
 		};
+		2D2F268028AD6B5200DEA832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F268128AD6B5200DEA832 /* Domain.framework */,
+				2D2F268228AD6B5200DEA832 /* Infrastructure.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +110,7 @@
 				2D126BD728AD6888008DB6CD /* Sources */,
 				2D126BD828AD6888008DB6CD /* Frameworks */,
 				2D126BD928AD6888008DB6CD /* Resources */,
+				2D2F268728AD6B5200DEA832 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
