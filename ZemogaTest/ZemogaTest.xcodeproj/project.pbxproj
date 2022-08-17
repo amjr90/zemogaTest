@@ -45,6 +45,7 @@
 		2D126BEC28AD688A008DB6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D2F268128AD6B5200DEA832 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F268228AD6B5200DEA832 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCA664728AD899400328E04 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		2D2F268028AD6B5200DEA832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DCA664728AD899400328E04 /* Networking.framework */,
 				2D2F268128AD6B5200DEA832 /* Domain.framework */,
 				2D2F268228AD6B5200DEA832 /* Infrastructure.framework */,
 			);
@@ -321,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZemogaTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -348,6 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZemogaTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

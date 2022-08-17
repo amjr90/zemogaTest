@@ -10,27 +10,56 @@ import XCTest
 
 class NetworkingTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_url_deliversFailureInvalidURlError() throws {
+        let service = NetworkingService(repository: NetworkingURLSession())
+        let url = ""
+       
+        service.get(url: url) { result in
+            switch result{
+            case .failure(let error):
+                XCTAssertEqual(error, .invalidURL)
+            default:
+                break
+            }
         }
+    }
+    
+    func test_url_deliversSuccessData() throws {
+        let service = NetworkingService(repository: NetworkingURLSession())
+        let url = "https://jsonplaceholder.typicode.com/posts"
+       
+        let expectation = XCTestExpectation(description: #function)
+
+        service.get(url: url) { result in
+            expectation.fulfill()
+            switch result{
+            case .success(let data):
+                XCTAssertNotNil(data)
+            default:
+                break
+            }
+        }
+        
+        wait(for: [expectation], timeout: 30.0)
+    }
+    
+    func test_url_deliversInvalidData() throws {
+        let service = NetworkingService(repository: NetworkingURLSession())
+        let url = "https://jsonplaceholder.com/posts"
+       
+        let expectation = XCTestExpectation(description: #function)
+
+        service.get(url: url) { result in
+            expectation.fulfill()
+            switch result{
+            case .failure(let error):
+                XCTAssertEqual(error, .invalidData)
+            default:
+                break
+            }
+        }
+        
+        wait(for: [expectation], timeout: 30.0)
     }
 
 }
