@@ -10,6 +10,10 @@
 		2D2F266928AD6A5500DEA832 /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F266028AD6A5500DEA832 /* Infrastructure.framework */; };
 		2D2F266E28AD6A5500DEA832 /* InfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F266D28AD6A5500DEA832 /* InfrastructureTests.swift */; };
 		2D2F266F28AD6A5500DEA832 /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2F266328AD6A5500DEA832 /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2F267B28AD6B3B00DEA832 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267928AD6B3B00DEA832 /* Domain.framework */; };
+		2D2F267C28AD6B3B00DEA832 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267928AD6B3B00DEA832 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D2F267D28AD6B3B00DEA832 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267A28AD6B3B00DEA832 /* Networking.framework */; };
+		2D2F267E28AD6B3B00DEA832 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267A28AD6B3B00DEA832 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,11 +26,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2D2F267F28AD6B3B00DEA832 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D2F267E28AD6B3B00DEA832 /* Networking.framework in Embed Frameworks */,
+				2D2F267C28AD6B3B00DEA832 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2D2F266028AD6A5500DEA832 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F266328AD6A5500DEA832 /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		2D2F266828AD6A5500DEA832 /* InfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F266D28AD6A5500DEA832 /* InfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureTests.swift; sourceTree = "<group>"; };
+		2D2F267928AD6B3B00DEA832 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2F267A28AD6B3B00DEA832 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2F267D28AD6B3B00DEA832 /* Networking.framework in Frameworks */,
+				2D2F267B28AD6B3B00DEA832 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +77,7 @@
 				2D2F266228AD6A5500DEA832 /* Infrastructure */,
 				2D2F266C28AD6A5500DEA832 /* InfrastructureTests */,
 				2D2F266128AD6A5500DEA832 /* Products */,
+				2D2F267828AD6B3B00DEA832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +106,15 @@
 			path = InfrastructureTests;
 			sourceTree = "<group>";
 		};
+		2D2F267828AD6B3B00DEA832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F267928AD6B3B00DEA832 /* Domain.framework */,
+				2D2F267A28AD6B3B00DEA832 /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +137,7 @@
 				2D2F265C28AD6A5500DEA832 /* Sources */,
 				2D2F265D28AD6A5500DEA832 /* Frameworks */,
 				2D2F265E28AD6A5500DEA832 /* Resources */,
+				2D2F267F28AD6B3B00DEA832 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
