@@ -7,160 +7,168 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D2F260328AD69B700DEA832 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F25FA28AD69B700DEA832 /* Networking.framework */; };
-		2D2F260828AD69B700DEA832 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F260728AD69B700DEA832 /* NetworkingTests.swift */; };
-		2D2F260928AD69B700DEA832 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2F25FD28AD69B700DEA832 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D2F268F28AD729B00DEA832 /* NetworkingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F268E28AD729B00DEA832 /* NetworkingRepository.swift */; };
-		2D2F269128AD738000DEA832 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F269028AD738000DEA832 /* NetworkingService.swift */; };
-		2D2F269328AD741300DEA832 /* NetworkingURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F269228AD741300DEA832 /* NetworkingURLSession.swift */; };
+		2D188C5E28ADEBF9004BD41D /* MyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D188C5528ADEBF9004BD41D /* MyNetworking.framework */; };
+		2D188C6328ADEBF9004BD41D /* MyNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D188C6228ADEBF9004BD41D /* MyNetworkingTests.swift */; };
+		2D188C6428ADEBF9004BD41D /* MyNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D188C5828ADEBF9004BD41D /* MyNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D188C7328ADEC6D004BD41D /* MyNetworkingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D188C7028ADEC6D004BD41D /* MyNetworkingRepository.swift */; };
+		2D188C7428ADEC6D004BD41D /* MyNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D188C7128ADEC6D004BD41D /* MyNetworkingService.swift */; };
+		2D188C7528ADEC6D004BD41D /* MyNetworkingURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D188C7228ADEC6D004BD41D /* MyNetworkingURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D2F260428AD69B700DEA832 /* PBXContainerItemProxy */ = {
+		2D188C5F28ADEBF9004BD41D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2D2F25F128AD69B700DEA832 /* Project object */;
+			containerPortal = 2D188C4C28ADEBF9004BD41D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D2F25F928AD69B700DEA832;
-			remoteInfo = Networking;
+			remoteGlobalIDString = 2D188C5428ADEBF9004BD41D;
+			remoteInfo = MyNetworking;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D2F25FA28AD69B700DEA832 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D2F25FD28AD69B700DEA832 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
-		2D2F260228AD69B700DEA832 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D2F260728AD69B700DEA832 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
-		2D2F268E28AD729B00DEA832 /* NetworkingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingRepository.swift; sourceTree = "<group>"; };
-		2D2F269028AD738000DEA832 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
-		2D2F269228AD741300DEA832 /* NetworkingURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingURLSession.swift; sourceTree = "<group>"; };
+		2D188C5528ADEBF9004BD41D /* MyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C5828ADEBF9004BD41D /* MyNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNetworking.h; sourceTree = "<group>"; };
+		2D188C5D28ADEBF9004BD41D /* MyNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C6228ADEBF9004BD41D /* MyNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkingTests.swift; sourceTree = "<group>"; };
+		2D188C7028ADEC6D004BD41D /* MyNetworkingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetworkingRepository.swift; sourceTree = "<group>"; };
+		2D188C7128ADEC6D004BD41D /* MyNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetworkingService.swift; sourceTree = "<group>"; };
+		2D188C7228ADEC6D004BD41D /* MyNetworkingURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetworkingURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D2F25F728AD69B700DEA832 /* Frameworks */ = {
+		2D188C5228ADEBF9004BD41D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D2F25FF28AD69B700DEA832 /* Frameworks */ = {
+		2D188C5A28ADEBF9004BD41D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2F260328AD69B700DEA832 /* Networking.framework in Frameworks */,
+				2D188C5E28ADEBF9004BD41D /* MyNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D2F25F028AD69B700DEA832 = {
+		2D188C4B28ADEBF9004BD41D = {
 			isa = PBXGroup;
 			children = (
-				2D2F25FC28AD69B700DEA832 /* Networking */,
-				2D2F260628AD69B700DEA832 /* NetworkingTests */,
-				2D2F25FB28AD69B700DEA832 /* Products */,
+				2D188C5728ADEBF9004BD41D /* MyNetworking */,
+				2D188C6128ADEBF9004BD41D /* MyNetworkingTests */,
+				2D188C5628ADEBF9004BD41D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2D2F25FB28AD69B700DEA832 /* Products */ = {
+		2D188C5628ADEBF9004BD41D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D2F25FA28AD69B700DEA832 /* Networking.framework */,
-				2D2F260228AD69B700DEA832 /* NetworkingTests.xctest */,
+				2D188C5528ADEBF9004BD41D /* MyNetworking.framework */,
+				2D188C5D28ADEBF9004BD41D /* MyNetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D2F25FC28AD69B700DEA832 /* Networking */ = {
+		2D188C5728ADEBF9004BD41D /* MyNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				2D2F25FD28AD69B700DEA832 /* Networking.h */,
-				2D2F268E28AD729B00DEA832 /* NetworkingRepository.swift */,
-				2D2F269028AD738000DEA832 /* NetworkingService.swift */,
-				2D2F269228AD741300DEA832 /* NetworkingURLSession.swift */,
+				2D188C7628ADEDD1004BD41D /* MyNetworking */,
+				2D188C5828ADEBF9004BD41D /* MyNetworking.h */,
 			);
-			path = Networking;
+			path = MyNetworking;
 			sourceTree = "<group>";
 		};
-		2D2F260628AD69B700DEA832 /* NetworkingTests */ = {
+		2D188C6128ADEBF9004BD41D /* MyNetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D2F260728AD69B700DEA832 /* NetworkingTests.swift */,
+				2D188C6228ADEBF9004BD41D /* MyNetworkingTests.swift */,
 			);
-			path = NetworkingTests;
+			path = MyNetworkingTests;
+			sourceTree = "<group>";
+		};
+		2D188C7628ADEDD1004BD41D /* MyNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2D188C7028ADEC6D004BD41D /* MyNetworkingRepository.swift */,
+				2D188C7128ADEC6D004BD41D /* MyNetworkingService.swift */,
+				2D188C7228ADEC6D004BD41D /* MyNetworkingURLSession.swift */,
+			);
+			path = MyNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D2F25F528AD69B700DEA832 /* Headers */ = {
+		2D188C5028ADEBF9004BD41D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2F260928AD69B700DEA832 /* Networking.h in Headers */,
+				2D188C6428ADEBF9004BD41D /* MyNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D2F25F928AD69B700DEA832 /* Networking */ = {
+		2D188C5428ADEBF9004BD41D /* MyNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2F260C28AD69B700DEA832 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildConfigurationList = 2D188C6728ADEBF9004BD41D /* Build configuration list for PBXNativeTarget "MyNetworking" */;
 			buildPhases = (
-				2D2F25F528AD69B700DEA832 /* Headers */,
-				2D2F25F628AD69B700DEA832 /* Sources */,
-				2D2F25F728AD69B700DEA832 /* Frameworks */,
-				2D2F25F828AD69B700DEA832 /* Resources */,
+				2D188C5028ADEBF9004BD41D /* Headers */,
+				2D188C5128ADEBF9004BD41D /* Sources */,
+				2D188C5228ADEBF9004BD41D /* Frameworks */,
+				2D188C5328ADEBF9004BD41D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Networking;
-			productName = Networking;
-			productReference = 2D2F25FA28AD69B700DEA832 /* Networking.framework */;
+			name = MyNetworking;
+			productName = MyNetworking;
+			productReference = 2D188C5528ADEBF9004BD41D /* MyNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D2F260128AD69B700DEA832 /* NetworkingTests */ = {
+		2D188C5C28ADEBF9004BD41D /* MyNetworkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2F260F28AD69B700DEA832 /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
+			buildConfigurationList = 2D188C6A28ADEBF9004BD41D /* Build configuration list for PBXNativeTarget "MyNetworkingTests" */;
 			buildPhases = (
-				2D2F25FE28AD69B700DEA832 /* Sources */,
-				2D2F25FF28AD69B700DEA832 /* Frameworks */,
-				2D2F260028AD69B700DEA832 /* Resources */,
+				2D188C5928ADEBF9004BD41D /* Sources */,
+				2D188C5A28ADEBF9004BD41D /* Frameworks */,
+				2D188C5B28ADEBF9004BD41D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D2F260528AD69B700DEA832 /* PBXTargetDependency */,
+				2D188C6028ADEBF9004BD41D /* PBXTargetDependency */,
 			);
-			name = NetworkingTests;
-			productName = NetworkingTests;
-			productReference = 2D2F260228AD69B700DEA832 /* NetworkingTests.xctest */;
+			name = MyNetworkingTests;
+			productName = MyNetworkingTests;
+			productReference = 2D188C5D28ADEBF9004BD41D /* MyNetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2D2F25F128AD69B700DEA832 /* Project object */ = {
+		2D188C4C28ADEBF9004BD41D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					2D2F25F928AD69B700DEA832 = {
+					2D188C5428ADEBF9004BD41D = {
 						CreatedOnToolsVersion = 13.4.1;
 						LastSwiftMigration = 1340;
 					};
-					2D2F260128AD69B700DEA832 = {
+					2D188C5C28ADEBF9004BD41D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2D2F25F428AD69B700DEA832 /* Build configuration list for PBXProject "Networking" */;
+			buildConfigurationList = 2D188C4F28ADEBF9004BD41D /* Build configuration list for PBXProject "MyNetworking" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,26 +176,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 2D2F25F028AD69B700DEA832;
-			productRefGroup = 2D2F25FB28AD69B700DEA832 /* Products */;
+			mainGroup = 2D188C4B28ADEBF9004BD41D;
+			productRefGroup = 2D188C5628ADEBF9004BD41D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D2F25F928AD69B700DEA832 /* Networking */,
-				2D2F260128AD69B700DEA832 /* NetworkingTests */,
+				2D188C5428ADEBF9004BD41D /* MyNetworking */,
+				2D188C5C28ADEBF9004BD41D /* MyNetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D2F25F828AD69B700DEA832 /* Resources */ = {
+		2D188C5328ADEBF9004BD41D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D2F260028AD69B700DEA832 /* Resources */ = {
+		2D188C5B28ADEBF9004BD41D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,36 +205,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D2F25F628AD69B700DEA832 /* Sources */ = {
+		2D188C5128ADEBF9004BD41D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2F269328AD741300DEA832 /* NetworkingURLSession.swift in Sources */,
-				2D2F268F28AD729B00DEA832 /* NetworkingRepository.swift in Sources */,
-				2D2F269128AD738000DEA832 /* NetworkingService.swift in Sources */,
+				2D188C7528ADEC6D004BD41D /* MyNetworkingURLSession.swift in Sources */,
+				2D188C7328ADEC6D004BD41D /* MyNetworkingRepository.swift in Sources */,
+				2D188C7428ADEC6D004BD41D /* MyNetworkingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D2F25FE28AD69B700DEA832 /* Sources */ = {
+		2D188C5928ADEBF9004BD41D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2F260828AD69B700DEA832 /* NetworkingTests.swift in Sources */,
+				2D188C6328ADEBF9004BD41D /* MyNetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D2F260528AD69B700DEA832 /* PBXTargetDependency */ = {
+		2D188C6028ADEBF9004BD41D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D2F25F928AD69B700DEA832 /* Networking */;
-			targetProxy = 2D2F260428AD69B700DEA832 /* PBXContainerItemProxy */;
+			target = 2D188C5428ADEBF9004BD41D /* MyNetworking */;
+			targetProxy = 2D188C5F28ADEBF9004BD41D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2D2F260A28AD69B700DEA832 /* Debug */ = {
+		2D188C6528ADEBF9004BD41D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		2D2F260B28AD69B700DEA832 /* Release */ = {
+		2D188C6628ADEBF9004BD41D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,11 +354,10 @@
 			};
 			name = Release;
 		};
-		2D2F260D28AD69B700DEA832 /* Debug */ = {
+		2D188C6828ADEBF9004BD41D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -367,7 +374,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.MyNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -377,11 +384,10 @@
 			};
 			name = Debug;
 		};
-		2D2F260E28AD69B700DEA832 /* Release */ = {
+		2D188C6928ADEBF9004BD41D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -398,7 +404,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.MyNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -407,7 +413,7 @@
 			};
 			name = Release;
 		};
-		2D2F261028AD69B700DEA832 /* Debug */ = {
+		2D188C6B28ADEBF9004BD41D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -416,7 +422,7 @@
 				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.MyNetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -424,7 +430,7 @@
 			};
 			name = Debug;
 		};
-		2D2F261128AD69B700DEA832 /* Release */ = {
+		2D188C6C28ADEBF9004BD41D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -433,7 +439,7 @@
 				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.MyNetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -444,34 +450,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D2F25F428AD69B700DEA832 /* Build configuration list for PBXProject "Networking" */ = {
+		2D188C4F28ADEBF9004BD41D /* Build configuration list for PBXProject "MyNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D2F260A28AD69B700DEA832 /* Debug */,
-				2D2F260B28AD69B700DEA832 /* Release */,
+				2D188C6528ADEBF9004BD41D /* Debug */,
+				2D188C6628ADEBF9004BD41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2F260C28AD69B700DEA832 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+		2D188C6728ADEBF9004BD41D /* Build configuration list for PBXNativeTarget "MyNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D2F260D28AD69B700DEA832 /* Debug */,
-				2D2F260E28AD69B700DEA832 /* Release */,
+				2D188C6828ADEBF9004BD41D /* Debug */,
+				2D188C6928ADEBF9004BD41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2F260F28AD69B700DEA832 /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
+		2D188C6A28ADEBF9004BD41D /* Build configuration list for PBXNativeTarget "MyNetworkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D2F261028AD69B700DEA832 /* Debug */,
-				2D2F261128AD69B700DEA832 /* Release */,
+				2D188C6B28ADEBF9004BD41D /* Debug */,
+				2D188C6C28ADEBF9004BD41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2D2F25F128AD69B700DEA832 /* Project object */;
+	rootObject = 2D188C4C28ADEBF9004BD41D /* Project object */;
 }

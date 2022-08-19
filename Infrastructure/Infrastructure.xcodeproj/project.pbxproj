@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D188C4228ADE91E004BD41D /* PostsRepositoryURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D188C4128ADE91E004BD41D /* PostsRepositoryURLSession.swift */; };
+		2D188C7B28ADF598004BD41D /* MyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D188C7A28ADF598004BD41D /* MyNetworking.framework */; };
+		2D188C7C28ADF598004BD41D /* MyNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D188C7A28ADF598004BD41D /* MyNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D188C8128ADF676004BD41D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D188C8028ADF676004BD41D /* Domain.framework */; };
+		2D188C8228ADF676004BD41D /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D188C8028ADF676004BD41D /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D2F266928AD6A5500DEA832 /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F266028AD6A5500DEA832 /* Infrastructure.framework */; };
 		2D2F266E28AD6A5500DEA832 /* InfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F266D28AD6A5500DEA832 /* InfrastructureTests.swift */; };
 		2D2F266F28AD6A5500DEA832 /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2F266328AD6A5500DEA832 /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D2F267B28AD6B3B00DEA832 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267928AD6B3B00DEA832 /* Domain.framework */; };
-		2D2F267C28AD6B3B00DEA832 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267928AD6B3B00DEA832 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D2F267D28AD6B3B00DEA832 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267A28AD6B3B00DEA832 /* Networking.framework */; };
-		2D2F267E28AD6B3B00DEA832 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2F267A28AD6B3B00DEA832 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D4F500E28AFD63700C49B65 /* PostsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F500C28AFD63700C49B65 /* PostsModel.xcdatamodeld */; };
+		2D4F501428AFD9D200C49B65 /* PostEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F501228AFD9D200C49B65 /* PostEntity+CoreDataClass.swift */; };
+		2D4F501528AFD9D200C49B65 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F501328AFD9D200C49B65 /* PostEntity+CoreDataProperties.swift */; };
+		2D4F501728AFDCB100C49B65 /* PostRepositoryCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F501628AFDCB100C49B65 /* PostRepositoryCoreData.swift */; };
+		2D4F501A28AFE13700C49B65 /* PostTraslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F501928AFE13700C49B65 /* PostTraslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +39,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2D2F267E28AD6B3B00DEA832 /* Networking.framework in Embed Frameworks */,
-				2D2F267C28AD6B3B00DEA832 /* Domain.framework in Embed Frameworks */,
+				2D188C8228ADF676004BD41D /* Domain.framework in Embed Frameworks */,
+				2D188C7C28ADF598004BD41D /* MyNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,12 +48,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D188C4128ADE91E004BD41D /* PostsRepositoryURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepositoryURLSession.swift; sourceTree = "<group>"; };
+		2D188C4828ADEAD0004BD41D /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C6D28ADEC0A004BD41D /* MyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C7A28ADF598004BD41D /* MyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C7D28ADF5E6004BD41D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D188C8028ADF676004BD41D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F266028AD6A5500DEA832 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F266328AD6A5500DEA832 /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		2D2F266828AD6A5500DEA832 /* InfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F266D28AD6A5500DEA832 /* InfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureTests.swift; sourceTree = "<group>"; };
 		2D2F267928AD6B3B00DEA832 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2F267A28AD6B3B00DEA832 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4F500D28AFD63700C49B65 /* PostsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostsModel.xcdatamodel; sourceTree = "<group>"; };
+		2D4F501228AFD9D200C49B65 /* PostEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2D4F501328AFD9D200C49B65 /* PostEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D4F501628AFDCB100C49B65 /* PostRepositoryCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryCoreData.swift; sourceTree = "<group>"; };
+		2D4F501928AFE13700C49B65 /* PostTraslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTraslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2F267D28AD6B3B00DEA832 /* Networking.framework in Frameworks */,
-				2D2F267B28AD6B3B00DEA832 /* Domain.framework in Frameworks */,
+				2D188C8128ADF676004BD41D /* Domain.framework in Frameworks */,
+				2D188C7B28ADF598004BD41D /* MyNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,7 @@
 		2D2F265628AD6A5500DEA832 = {
 			isa = PBXGroup;
 			children = (
+				2D4F500F28AFD9A500C49B65 /* PostsCoreData */,
 				2D2F266228AD6A5500DEA832 /* Infrastructure */,
 				2D2F266C28AD6A5500DEA832 /* InfrastructureTests */,
 				2D2F266128AD6A5500DEA832 /* Products */,
@@ -93,6 +111,7 @@
 		2D2F266228AD6A5500DEA832 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2DA3C22428AD9D880057B7FA /* Posts */,
 				2D2F266328AD6A5500DEA832 /* Infrastructure.h */,
 			);
 			path = Infrastructure;
@@ -109,10 +128,67 @@
 		2D2F267828AD6B3B00DEA832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D188C8028ADF676004BD41D /* Domain.framework */,
+				2D188C7D28ADF5E6004BD41D /* Domain.framework */,
+				2D188C7A28ADF598004BD41D /* MyNetworking.framework */,
+				2D188C6D28ADEC0A004BD41D /* MyNetworking.framework */,
+				2D188C4828ADEAD0004BD41D /* Networking.framework */,
 				2D2F267928AD6B3B00DEA832 /* Domain.framework */,
 				2D2F267A28AD6B3B00DEA832 /* Networking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D4F500F28AFD9A500C49B65 /* PostsCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2D4F501028AFD9B800C49B65 /* Entities */,
+				2D4F500C28AFD63700C49B65 /* PostsModel.xcdatamodeld */,
+			);
+			path = PostsCoreData;
+			sourceTree = "<group>";
+		};
+		2D4F501028AFD9B800C49B65 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2D4F501828AFE11B00C49B65 /* Anticorruption */,
+				2D4F501128AFD9C000C49B65 /* PostEntity */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2D4F501128AFD9C000C49B65 /* PostEntity */ = {
+			isa = PBXGroup;
+			children = (
+				2D4F501228AFD9D200C49B65 /* PostEntity+CoreDataClass.swift */,
+				2D4F501328AFD9D200C49B65 /* PostEntity+CoreDataProperties.swift */,
+			);
+			path = PostEntity;
+			sourceTree = "<group>";
+		};
+		2D4F501828AFE11B00C49B65 /* Anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+				2D4F501928AFE13700C49B65 /* PostTraslator.swift */,
+			);
+			path = Anticorruption;
+			sourceTree = "<group>";
+		};
+		2DA3C22428AD9D880057B7FA /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				2DA3C22528AD9D8E0057B7FA /* Repository */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		2DA3C22528AD9D8E0057B7FA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2D188C4128ADE91E004BD41D /* PostsRepositoryURLSession.swift */,
+				2D4F501628AFDCB100C49B65 /* PostRepositoryCoreData.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +220,8 @@
 			dependencies = (
 			);
 			name = Infrastructure;
+			packageProductDependencies = (
+			);
 			productName = Infrastructure;
 			productReference = 2D2F266028AD6A5500DEA832 /* Infrastructure.framework */;
 			productType = "com.apple.product-type.framework";
@@ -178,6 +256,7 @@
 				TargetAttributes = {
 					2D2F265F28AD6A5500DEA832 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					2D2F266728AD6A5500DEA832 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -193,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 2D2F265628AD6A5500DEA832;
+			packageReferences = (
+				2D4F500728AFD2F300C49B65 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 2D2F266128AD6A5500DEA832 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4F501A28AFE13700C49B65 /* PostTraslator.swift in Sources */,
+				2D4F501528AFD9D200C49B65 /* PostEntity+CoreDataProperties.swift in Sources */,
+				2D4F501728AFDCB100C49B65 /* PostRepositoryCoreData.swift in Sources */,
+				2D4F501428AFD9D200C49B65 /* PostEntity+CoreDataClass.swift in Sources */,
+				2D188C4228ADE91E004BD41D /* PostsRepositoryURLSession.swift in Sources */,
+				2D4F500E28AFD63700C49B65 /* PostsModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +458,12 @@
 		2D2F267328AD6A5500DEA832 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -389,6 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,9 +489,12 @@
 		2D2F267428AD6A5500DEA832 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -424,8 +519,10 @@
 		2D2F267628AD6A5500DEA832 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.InfrastructureTests;
@@ -439,8 +536,10 @@
 		2D2F267728AD6A5500DEA832 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C5UNBSVK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amjr.InfrastructureTests;
@@ -482,6 +581,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D4F500728AFD2F300C49B65 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		2D4F500C28AFD63700C49B65 /* PostsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D4F500D28AFD63700C49B65 /* PostsModel.xcdatamodel */,
+			);
+			currentVersion = 2D4F500D28AFD63700C49B65 /* PostsModel.xcdatamodel */;
+			path = PostsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2D2F265728AD6A5500DEA832 /* Project object */;
 }
