@@ -17,3 +17,6 @@ For the presentation layer i use viper as architectural pattern.
 
 Open zemogaTest/ZemogaTest/ZemogaTest.xcworkspace workspace.
 Once the project is open select the ZemogaTest scheme and run it on the simulator
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
