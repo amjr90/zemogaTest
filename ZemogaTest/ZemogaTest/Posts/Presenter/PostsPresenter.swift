@@ -58,7 +58,7 @@ class PostsPresenter: PostsPresenterProtocol {
     func deleteAllPressed() {
         posts = posts.filter({$0.favorite == true})
         view?.showPosts(posts: posts)
-        cacheService.deleteAllPosts(result: true)
+        cacheService.deleteAllPosts()
     }
     
     func pushDetail(post: Post) {

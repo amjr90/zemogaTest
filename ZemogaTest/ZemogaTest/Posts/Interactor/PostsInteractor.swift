@@ -18,14 +18,23 @@ class PostsInteractor: PostsInteractorProtocol {
     let service = PostsRepositoryURLSession()
     
     func getCachedPosts() {
+        print("get cache posts")
         cacheService.getPosts { result in
             switch result{
             case .success(let posts):
-                if posts.count > 0{
-                    self.presenter?.presentPosts(posts: posts)
+                if posts.isEmpty{
+                    self.fetchPosts()
                 }
                 else{
-                    self.fetchPosts()
+                    let favoritePosts = posts.filter({$0.favorite == true})
+                    let notFavoirtePost = posts.filter({$0.favorite != true})
+                    if !favoritePosts.isEmpty && notFavoirtePost.isEmpty{
+                        self.presenter?.presentPosts(posts: posts)
+                        self.fetchPosts()
+                    }
+                    else{
+                        self.presenter?.presentPosts(posts: posts)
+                    }
                 }
             case .failure(_):
                 self.fetchPosts()
@@ -34,10 +43,11 @@ class PostsInteractor: PostsInteractorProtocol {
     }
     
     func fetchPosts() {
+        print("get posts from internet")
         service.getPosts { result in
             switch result{
             case .success(let posts):
-                self.cacheService.savePosts(posts: posts, result: true)
+                self.cacheService.savePosts(posts: posts)
                 self.presenter?.presentPosts(posts: posts)
             case .failure(let error):
                 print(error)

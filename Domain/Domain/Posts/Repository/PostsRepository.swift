@@ -16,8 +16,8 @@ public protocol PostsRepository: AnyObject {
 
 public protocol PostsRepositoryCache: AnyObject{
     func getPosts(completion: @escaping (Result<[Post], Error>)->Void)
-    func savePosts(posts: [Post], result: Bool)
-    func deleteAllPosts(result: Bool)
+    func savePosts(posts: [Post])
+    func deleteAllPosts()
     func deletePost(post: Post)
     func updatePost(post: Post)
 }

@@ -111,6 +111,7 @@
 		2D2F266228AD6A5500DEA832 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2D4F501828AFE11B00C49B65 /* Anticorruption */,
 				2DA3C22428AD9D880057B7FA /* Posts */,
 				2D2F266328AD6A5500DEA832 /* Infrastructure.h */,
 			);
@@ -151,7 +152,6 @@
 		2D4F501028AFD9B800C49B65 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				2D4F501828AFE11B00C49B65 /* Anticorruption */,
 				2D4F501128AFD9C000C49B65 /* PostEntity */,
 			);
 			path = Entities;

@@ -45,27 +45,50 @@ public class PostRepositoryCoreData: PostsRepositoryCache {
         }
     }
     
-    public func savePosts(posts: [Post], result: Bool) {
+    public func savePosts(posts: [Post]) {
         let _ = PostTraslator().getPostEntities(posts: posts, context: persistentContainer.viewContext)
         savePersistentContainer()
     }
     
-    public func deleteAllPosts(result: Bool) {
-        let _ = persistentContainer.viewContext.deletedObjects
-        savePersistentContainer()
+    public func deleteAllPosts() {
+        do
+        {
+            var postEntities = try persistentContainer.viewContext.fetch(PostEntity.fetchRequest())
+            postEntities = postEntities.filter({$0.favorite != true})
+            for postEntity in postEntities {
+                persistentContainer.viewContext.delete(postEntity)
+            }
+            savePersistentContainer()
+        }
+        catch{
+            print(error)
+        }
     }
     
     public func updatePost(post: Post) {
-        let _ = PostTraslator().postDomainToPostEntity(post: post, context: persistentContainer.viewContext)
-        
-        savePersistentContainer()
+        do {
+            let postEntities = try persistentContainer.viewContext.fetch(PostEntity.fetchRequest())
+            let postEntity = postEntities.first(where: {$0.id == post.id})
+            postEntity?.favorite = post.favorite ?? false
+            
+            savePersistentContainer()
+        } catch  {
+            print(error)
+        }
     }
     
     public func deletePost(post: Post) {
-        let postEntity = PostTraslator().postDomainToPostEntity(post: post, context: persistentContainer.viewContext)
+        do{
+            let postEntities = try persistentContainer.viewContext.fetch(PostEntity.fetchRequest())
+            let postEntity = postEntities.first(where: {$0.id == post.id})
+            
+            persistentContainer.viewContext.delete(postEntity!)
+            savePersistentContainer()
+        }
+        catch{
+            print(error)
+        }
         
-        persistentContainer.viewContext.delete(postEntity)
-        savePersistentContainer()
     }
     
     func savePersistentContainer(){
